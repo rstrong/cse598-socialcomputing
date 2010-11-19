@@ -1,1 +1,5 @@
 *.txt
+project2/CSE598-Project2/blib/
+project2/CSE598-Project2/pm_to_blib
+project2/CSE598-Project2/Makefile
+project2/CSE598-Project2/inc/
