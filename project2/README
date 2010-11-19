@@ -1,2 +1,28 @@
 Project 2 
 Author: Rick Strong
+
+Time of crawl: started at Nov. 10 9:30am
+Duration of crawl: ~16 hours
+
+Seeds: 68627, 234182, 1272
+
+To Run: 
+Simple run 
+perl Makefile.PL
+make
+make test
+(install any missing modules)
+make install
+
+perl project2.pl
+This will start the crawler with the default 6 processes
+
+create_mapping.pl creates the mappings file, sample usage:
+perl create_mapping.pl --files=friends.txt,followers.txt
+
+To create nodes file:
+cat followers.txt | awk -F, '{print $1}' > nodes.txt
+
+To anonymize simply run:
+perl anonymize.pl --map=mapping.txt --file=friends.txt
+this will generate an anon.txt of the friends file.
